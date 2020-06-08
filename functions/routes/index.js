@@ -3,7 +3,14 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Vimophy' });
+});
+
+router.get('/p', function(req, res, next) {
+  res.render('section', {
+    title: 'Vimophy',
+    pageTitle: 'Portfolio'
+  });
 });
 
 module.exports = router;
