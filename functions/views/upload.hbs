@@ -92,18 +92,17 @@
         <div class="row justify-content-center">
           <div class="col-lg-6 mt-3 mt-lg-5">
             <div class="card shadow-small">
-              <div class="card-header">
-                Upload File
+              <div class="card-header text-center">
+                <strong>Upload File</strong>
               </div>
               <div class="card-body">
-                <form action="/upload" method="post" enctype="multipart/form-data">
+                <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
                   <div class="form-group">
-                    <label for="photo">File</label>
-                    <input type="file" name="photo" id="photo" accept="image/*" />
+                    <input type="file" class="form-control" name="photo" id="photo" accept="image/*" required />
                   </div>
               </div>
               <div class="card-footer">
-                <input type="submit" value="Upload File" />
+                  <input type="submit" value="Upload File" class="btn btn-success btn-block"/>
                 </form>
               </div>
             </div>
@@ -153,5 +152,9 @@
 
   <!-- Template Main JS File -->
   <script src="/assets/js/main.js"></script>
+
+  <script>
+
+  </script>
 </body>
 </html>
