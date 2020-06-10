@@ -13,4 +13,11 @@ router.get('/p', function(req, res, next) {
   });
 });
 
+router.get('/upload', (req, res) => {
+  res.render('upload', {
+    title: 'Vimophy',
+    pageTitle: 'Upload'
+  })
+})
+
 module.exports = router;
